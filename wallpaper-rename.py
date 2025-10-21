@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 
 import os
+import random
 
-path = "/path/to/wallpapers"
+path = "/home/aaron/Pictures/jpgWallpapers/"
 
 directory = os.listdir(path)
+
+random.shuffle(directory)
 
 # renaming them so that i do not get clashes with names. for example, i want to name files 0, 1, 2, 3 but those names are occupied
 for file in directory:
